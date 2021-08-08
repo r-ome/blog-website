@@ -10,6 +10,7 @@ module.exports = {
   output: {
     filename: 'main.[contenthash].js',
     path: path.resolve(__dirname, 'build'),
+    publicPath: '/',
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/template.html' }),
@@ -22,6 +23,17 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
+      {
+        test: /\.(css)$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
+    port: 3000,
+    contentBase: path.join(__dirname, 'build'),
+    hot: true,
+    open: true,
   },
 };
