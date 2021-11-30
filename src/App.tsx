@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Header } from './components';
-import './styles.css';
 import routes from './routes/routes';
 
 interface Route {

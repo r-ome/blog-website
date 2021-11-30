@@ -1,0 +1,14 @@
+@import './components/Blog/index.scss';
+@import './components/Header/styles.scss';
+@import './components/_commons/Button/styles.scss';
+@import './components/_commons/TextField/styles.scss';
+
+.card {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+  width: 250px;
+  border: 1px solid black;
+  box-shadow: 5px 3px #989898;
+}
