@@ -1,7 +1,14 @@
 import React from 'react';
 import './styles.css';
 
-const Button = (props) => {
+interface ButtonProps {
+  type: "button" | "submit" | "reset",
+  style: React.CSSProperties,
+  onClick: () => null | null,
+  children: React.ReactNode
+}
+
+const Button = (props: ButtonProps) => {
   return (
     <div>
       <button

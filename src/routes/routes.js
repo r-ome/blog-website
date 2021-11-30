@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from '../components/Login';
+import Blog from '../components/Blog';
 
 export default [
   {
@@ -16,6 +17,7 @@ export default [
     name: 'Blog',
     path: '/blog',
     auth: false,
+    component: Blog,
   },
   {
     name: 'Login',
